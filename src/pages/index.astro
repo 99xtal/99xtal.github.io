@@ -1,55 +1,51 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Joe Rybarczyk">
+	<header>
+		<div class="sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 my-0 mx-auto">
+			<div class="flex flex-wrap flex-row box-border mx-[-16px]">
+				<div class="flex items-center flex-wrap py-10 lg:py-16 px-4">
+					<div>
+						<a href="/" class="px-0 py-1 font-khula font-bold text-4xl text-gray-200">99xtal</a>
+					</div>
+				</div>
+				<nav class=" flex ml-auto">
+					<div class="flex items-center">
+						<ul class="flex items-center">
+							<li class="inline-block mr-12 mb-0">
+								<a href="/" class="py-1 text-lg font-khula font-bold  text-gray-200">Home</a>
+							</li>
+							<li class="inline-block mr-12 mb-0">
+								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">Blog</a>
+							</li>
+							<li class="inline-block mr-12 mb-0">
+								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">About</a>
+							</li>
+							<li class="inline-block mr-12 mb-0">
+								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
 	<main>
-		<h1>Hello, world! My name is <span class="text-gradient">Joe Rybarczyk</span></h1>
+		<section class="my-10 xl:my-16">
+			<div class="sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 my-0 mx-auto">
+				<div class="flex flex-wrap items-center flex-row box-border mx-[-16px]">
+					<div class="px-4">
+						<div>
+							<h1 class="font-khula text-4xl lg:text-5xl xl:text-6xl font-semibold mb-8 text-gray-200">Hello, my name's Joe. I'm a Web Developer based in Virginia.</h1>
+							<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">With a year of experience in full stack development and a passion for great software, I want to help create the next generation of performant web services.</p>
+							<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">I invite you to navigate my portfolio to know a bit more about me and my work.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Fredoka';
+	src: url('/fonts/FredokaOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Khula';
+	src: url('/fonts/Khula-Light.ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Khula';
+	src: url('/fonts/Khula-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Khula';
+	src: url('/fonts/Khula-SemiBold.ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Khula';
+	src: url('/fonts/Khula-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Khula';
+	src: url('/fonts/Khula-ExtraBold.ttf');
+	font-weight: 800;
+}
