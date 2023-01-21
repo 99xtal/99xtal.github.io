@@ -1,29 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import profile from '../../images/profile.jpg'
 ---
 
 <Layout title="Joe Rybarczyk">
-	<header>
+	<header class="fixed top-0 right-0 left-0 mx-auto">
 		<div class="sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 my-0 mx-auto">
-			<div class="flex flex-wrap flex-row box-border mx-[-16px]">
-				<div class="flex items-center flex-wrap py-10 lg:py-16 px-4">
-					<div>
-						<a href="/" class="px-0 py-1 font-khula font-bold text-4xl text-gray-200">99xtal</a>
-					</div>
-				</div>
+			<div class="flex flex-wrap items-center flex-row box-border mx-[-16px] pt-8">
 				<nav class=" flex ml-auto">
 					<div class="flex items-center">
 						<ul class="flex items-center">
-							<li class="inline-block mr-12 mb-0">
+							<li class="inline-block px-4 mb-0">
 								<a href="/" class="py-1 text-lg font-khula font-bold  text-gray-200">Home</a>
 							</li>
-							<li class="inline-block mr-12 mb-0">
+							<li class="inline-block px-4 mb-0">
 								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">Blog</a>
 							</li>
-							<li class="inline-block mr-12 mb-0">
+							<li class="inline-block px-4 mb-0">
 								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">About</a>
 							</li>
-							<li class="inline-block mr-12 mb-0">
+							<li class="inline-block px-4 mb-0">
 								<a href="/" class="py-1 text-lg font-khula font-bold text-gray-200">Contact</a>
 							</li>
 						</ul>
@@ -35,13 +31,15 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 		<section class="my-10 xl:my-16">
 			<div class="sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 my-0 mx-auto">
-				<div class="flex flex-wrap items-center flex-row box-border mx-[-16px]">
+				<div class="flex flex-wrap justify-start items-center flex-row box-border mx-[-16px]">
 					<div class="px-4">
-						<div>
-							<h1 class="font-khula text-4xl lg:text-5xl xl:text-6xl font-semibold mb-8 text-gray-200">Hello, my name's Joe. I'm a Web Developer based in Virginia.</h1>
-							<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">With a year of experience in full stack development and a passion for great software, I want to help create the next generation of performant web services.</p>
-							<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">I invite you to navigate my portfolio to know a bit more about me and my work.</p>
+						<div class="flex flex-row  justify-between items-end pb-8 lg:pb-12 xl:pb-16">
+							<img src={profile} class="w-24 md:w-32 lg:w-48 xl:w-72 mb-2 rounded-full border-solid border-4 border-white"/>
+							<h1 class="font-khula text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl p-1 font-semibold text-right text-gray-200">Hello, my name's Joe. I'm a Web Developer based in Virginia.</h1>
+							
 						</div>
+						<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">I think its cool to develop web services to create engaging user experiences. UI/UX design, microservices, cloud native.</p>
+						<p class="font-khula lg:text-xl xl:text-2xl text-gray-400 mb-8">I invite you to navigate my portfolio to know a bit more about me and my work.</p>
 					</div>
 				</div>
 			</div>
