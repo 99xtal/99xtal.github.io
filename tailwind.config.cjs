@@ -8,9 +8,11 @@ module.exports = {
         'khula': ['Khula']
       },
       colors: {
-        background: '#253237',
-        text: '#E0FBFC',
-        secondaryText: '#9DB4C0',
+        'primary-1': '#283618',
+        'primary-2': '#606C38',
+        'secondary-1': '#FEFAE0',
+        'accent-1': '#BC6C25',
+        'accent-2': '#DDA15E',
       },
     },
   },

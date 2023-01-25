@@ -1,0 +1,30 @@
+a {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #DDA15E;
+    transform: scaleX(0);
+    transition: transform 0.3s
+}
+
+.link--active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #DDA15E;
+}
+
+.hover-1:hover::after{
+    transform: scaleX(1);
+}

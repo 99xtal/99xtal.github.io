@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="About | Joe Rybarczyk">
+    <Header links={[
+		{
+			name: "Home",
+			url: "/",
+			active: false
+		},
+		{
+			name: "Blog",
+			url: "/blog",
+			active: false,
+		},
+		{
+			name: "About",
+			url: "/about",
+			active: true,
+		},
+		{
+			name: "Contact",
+			url: "/contact",
+			active: false,
+		},
+	]}/>
+</Layout>
