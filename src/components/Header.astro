@@ -16,8 +16,10 @@ const { links } = Astro.props;
     <div class="sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 my-0 mx-auto">
         <div class="flex flex-wrap items-center flex-row box-border mx-[-16px] my-4 md:py-4">
             <nav class=" flex ml-auto">
-                <div class="flex items-center">
-                    <ul class="flex items-center">
+                <div class="flex items-center relative">
+                    <input type="checkbox" id="menu-toggle" />
+                    <label for="menu-toggle" class="menu-icon"><span></span></label>
+                    <ul class=" items-center  hidden sm:flex">
                         {links.map(({ name, url, active }) => (
                         <li class="inline-block px-4 mb-0">
                             <a href={url} class={`py-1 text-lg font-khula font-bold text-secondary-1 hover:text-text  ${active ? 'link--active' : 'hover-1'}`}>{name}</a>
