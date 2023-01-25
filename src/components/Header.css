@@ -38,7 +38,7 @@ a {
     align-items: center;
     position: absolute;
     right: 14.5px;
-    top: 2px;
+    top: 8px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -76,11 +76,36 @@ a {
     top: 0;
     transform: rotate(90deg)
   }
+
+
   
+.navbar {
+    display: none;
+
+    flex-direction: column;
+    align-items: flex-end;
+}
 
   @media (min-width: 640px) {
     .menu-icon {
         display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+        width: 100%;
+        background-color: #283618;
+        position: fixed;
+        top: 48px;
+        right: 0;
     }
 }
 
